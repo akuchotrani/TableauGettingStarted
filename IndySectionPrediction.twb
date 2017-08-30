@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0728.2252                               -->
+<workbook original-version='10.3' source-build='10.3.2 (10300.17.0728.2252)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Indy500_2017_2' inline='true' name='federated.1k0mkph0tqfy191b9y2gj1xry3dj' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Indy500_2017_2' name='textscan.0vt5dcb0qvjv5e1gz1jl61480kk4'>
+            <connection class='textscan' directory='C:/Users/aakash.chotrani/Desktop/Indianapolis Json File' filename='Indy500_2017_2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0vt5dcb0qvjv5e1gz1jl61480kk4' name='Indy500_2017_2.csv' table='[Indy500_2017_2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Lap' ordinal='0' />
+            <column datatype='real' name='S1' ordinal='1' />
+            <column datatype='real' name='S2' ordinal='2' />
+            <column datatype='real' name='S3' ordinal='3' />
+            <column datatype='real' name='S4' ordinal='4' />
+            <column datatype='real' name='S5' ordinal='5' />
+            <column datatype='real' name='S2A' ordinal='6' />
+            <column datatype='real' name='S2B' ordinal='7' />
+            <column datatype='real' name='S3A' ordinal='8' />
+            <column datatype='real' name='S3B' ordinal='9' />
+            <column datatype='real' name='S4A' ordinal='10' />
+            <column datatype='real' name='S4B' ordinal='11' />
+            <column datatype='real' name='S5A' ordinal='12' />
+            <column datatype='real' name='S5B' ordinal='13' />
+            <column datatype='real' name='S1_Projected' ordinal='14' />
+            <column datatype='integer' name='S2_Projected' ordinal='15' />
+            <column datatype='integer' name='S3_Projected' ordinal='16' />
+            <column datatype='integer' name='S4_Projected' ordinal='17' />
+            <column datatype='integer' name='S5_Projected' ordinal='18' />
+            <column datatype='real' name='S2A_Projected' ordinal='19' />
+            <column datatype='real' name='S2B_Projected' ordinal='20' />
+            <column datatype='real' name='S3A_Projected' ordinal='21' />
+            <column datatype='real' name='S3B_Projected' ordinal='22' />
+            <column datatype='real' name='S4A_Projected' ordinal='23' />
+            <column datatype='real' name='S4B_Projected' ordinal='24' />
+            <column datatype='real' name='S5A_Projected' ordinal='25' />
+            <column datatype='real' name='S5B_Projected' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Lap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lap]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>Lap</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S1]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S2]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S3]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S4]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S5]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S5</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2A</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S2A]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S2A</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S2B]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S2B</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3A</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S3A]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S3A</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S3B]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S3B</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S4A</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S4A]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S4A</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S4B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S4B]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S4B</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S5A</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S5A]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S5A</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S5B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S5B]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S5B</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S1_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S1_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S1_Projected</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2_Projected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S2_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S2_Projected</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3_Projected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S3_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S3_Projected</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S4_Projected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S4_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S4_Projected</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S5_Projected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S5_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S5_Projected</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2A_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S2A_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S2A_Projected</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S2B_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S2B_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S2B_Projected</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3A_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S3A_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S3A_Projected</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S3B_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S3B_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S3B_Projected</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S4A_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S4A_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S4A_Projected</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S4B_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S4B_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S4B_Projected</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S5A_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S5A_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S5A_Projected</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S5B_Projected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[S5B_Projected]</local-name>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias>S5B_Projected</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Indy500_2017_2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Lap]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='real' name='[S1]' role='dimension' type='ordinal' />
+      <column caption='S1 Projected' datatype='real' name='[S1_Projected]' role='measure' type='quantitative' />
+      <column caption='S2A Projected' datatype='real' name='[S2A_Projected]' role='measure' type='quantitative' />
+      <column caption='S2B Projected' datatype='real' name='[S2B_Projected]' role='measure' type='quantitative' />
+      <column caption='S2 Projected' datatype='integer' name='[S2_Projected]' role='measure' type='quantitative' />
+      <column caption='S3A Projected' datatype='real' name='[S3A_Projected]' role='measure' type='quantitative' />
+      <column caption='S3B Projected' datatype='real' name='[S3B_Projected]' role='measure' type='quantitative' />
+      <column caption='S3 Projected' datatype='integer' name='[S3_Projected]' role='measure' type='quantitative' />
+      <column caption='S4A Projected' datatype='real' name='[S4A_Projected]' role='measure' type='quantitative' />
+      <column caption='S4B Projected' datatype='real' name='[S4B_Projected]' role='measure' type='quantitative' />
+      <column caption='S4 Projected' datatype='integer' name='[S4_Projected]' role='measure' type='quantitative' />
+      <column caption='S5A Projected' datatype='real' name='[S5A_Projected]' role='measure' type='quantitative' />
+      <column caption='S5B Projected' datatype='real' name='[S5B_Projected]' role='measure' type='quantitative' />
+      <column caption='S5 Projected' datatype='integer' name='[S5_Projected]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.132075' measure-ordering='alphabetic' measure-percentage='0.867925' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indy500_2017_2' name='federated.1k0mkph0tqfy191b9y2gj1xry3dj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k0mkph0tqfy191b9y2gj1xry3dj'>
+            <column aggregation='Sum' datatype='integer' name='[Lap]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='real' name='[S1]' role='dimension' type='ordinal' />
+            <column caption='S1 Projected' datatype='real' name='[S1_Projected]' role='measure' type='quantitative' />
+            <column-instance column='[Lap]' derivation='None' name='[none:Lap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[S1]' derivation='Sum' name='[sum:S1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[S1_Projected]' derivation='Sum' name='[sum:S1_Projected:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[sum:S1_Projected:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[sum:S1:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[sum:S1_Projected:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1k0mkph0tqfy191b9y2gj1xry3dj].[sum:S1:qk] + [federated.1k0mkph0tqfy191b9y2gj1xry3dj].[sum:S1_Projected:qk])</rows>
+        <cols>[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[none:Lap:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[:Measure Names]</field>
+            <field>[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[none:Lap:ok]</field>
+            <field>[federated.1k0mkph0tqfy191b9y2gj1xry3dj].[none:S1:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      xToAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
